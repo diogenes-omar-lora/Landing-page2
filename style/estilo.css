@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: luna;
+}
+#btn{
+    display: none;
+}
+.hamburger{
+    display: none;
+    position: relative;
+    cursor: pointer;
+}
+.line{
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    transition: transform 0.25s, opacity 0.35s;
+}
+.line--top{
+    transform: translateY(7px);
+}
+.line--bottom{
+    transform: translateY(-7px);
+}
+#btn:checked~.line--top{
+    transform: rotate(45deg);
+}
+#btn:checked~.line--midle{
+    transform: translateX(16px);
+    opacity: 0;
+}
+#btn:checked~.line--bottom{
+    transform: rotate(-45deg);
+}
+
+/* menu */
+.header .title{
+    padding-left: 10px;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+}
+.header li{
+    list-style: none;
+    margin: 0 3em;
+}
+.header ul{
+    padding-top: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar-nav a:hover{
+    color: aqua;
+}
+@media screen and (max-width:488px) {
+    .hamburger{
+        display: block;
+        padding-left: 10px;
+    }
+    .sidebar-nav{
+        width: 100%;
+        height: 0;
+        transition: all 0.5s ease;
+        overflow: hidden;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .sidebar-nav.active{
+        height: 35vh;
+        background-color: white;
+        border-radius: 10px;
+        padding: 1em;
+    }
+    .sidebar-nav a{
+        color: black;
+    }
+    .header ul{
+        flex-direction: column;
+    }
+    .header li{
+        margin: 0.5rem 0;
+        font-size: 20px;
+    }
+    .title{
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+    .header{
+        padding: 0.5em;
+    }
+
+}
+.fondo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
