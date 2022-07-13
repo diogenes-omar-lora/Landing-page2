@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: luna;
 }
+.body{
+    background-color: black;
+}
 #btn{
     display: none;
 }
@@ -58,11 +61,16 @@
 }
 .header{
     width: 100%;
-    background-color: black;
+    background: rgba(0, 0, 0, 0.86);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+
 }
 .sidebar-nav a:hover{
     color: aqua;
@@ -91,6 +99,7 @@
     }
     .sidebar-nav a{
         color: black;
+        font-weight: bold;
     }
     .header ul{
         flex-direction: column;
@@ -114,4 +123,37 @@
     align-items: center;
     width: 100%;
     height: 100vh;
+}
+.div2,.div4,.div6,.div8{
+    height: 50px;
+}
+.div1{
+    background-image: url(/imagenes/1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.div3{
+    background-image: url(/imagenes/8.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.div5{
+    background-image: url(/imagenes/2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.div7{
+    background-image: url(/imagenes/7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.div9{
+    background-image: url(/imagenes/9.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
