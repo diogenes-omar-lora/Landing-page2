@@ -42,7 +42,7 @@
 
 /* menu */
 .header .title{
-    padding-left: 10px;
+    padding-left: 20px;
 }
 .header a{
     text-decoration: none;
@@ -70,10 +70,11 @@
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 1;
 
 }
-.sidebar-nav a:hover{
-    color: aqua;
+.header a:hover{
+    color: rgb(0, 255, 200);
 }
 @media screen and (max-width:488px) {
     .hamburger{
@@ -110,7 +111,7 @@
     }
     .title{
         padding-right: 10px;
-        padding-top: 10px;
+        padding-top: 5px;
     }
     .header{
         padding: 0.5em;
@@ -156,4 +157,34 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+.cont-text{
+    text-align: center;
+    color: white;
+    width: 150px;
+    background: rgba(0, 0, 0, 0.86);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    border-radius: 10px;
+}
+.cont-text a{
+    text-decoration: none;
+}
+.cont-text a:hover{
+    text-decoration: underline;
+
+}
+.cont-subtitle{
+    font-weight: bold;
+    text-align: center;
+    width: 300px;
+    color: white;
+    background: rgba(0, 0, 0, 0.70);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    border-radius: 10px;
+}
+.footer{
+    height: 40px;
+    
 }
